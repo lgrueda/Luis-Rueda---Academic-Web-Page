@@ -1,4 +1,4 @@
-/* --- Global Theme & Reset --- */
+/* --- Global Theme & Minimal Reset --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,17 +6,17 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.7;
-  color: #333333;
-  background-color: #f8f9fa;
+  color: #222222;
+  background-color: #ffffff;
   padding-bottom: 60px;
 }
 
 a {
   color: #0044cc;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.15s ease-in-out;
 }
 
 a:hover {
@@ -26,68 +26,74 @@ a:hover {
 
 /* --- Layout Container --- */
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
-/* --- Modern Header Section --- */
+/* --- Redesigned Professor Brand Header --- */
 .site-header {
   background-color: #ffffff;
-  padding: 40px 0 30px 0;
+  padding: 60px 0 40px 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .profile-block {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .profile-pic {
-  width: 110px;
-  height: 140px;
+  width: 120px;
+  height: 155px;
   object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  border: 1px solid #e1e4e6;
 }
 
 .profile-info h1 {
-  font-size: 28px;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 36px;
   color: #111111;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
 }
 
 .profile-info p {
-  font-size: 14px;
-  color: #666666;
+  font-size: 14.5px;
+  color: #555555;
   line-height: 1.6;
+  margin-bottom: 0;
+  text-align: left;
 }
 
-/* --- Sleek Sticky Navbar --- */
+/* --- Modernized Navbar --- */
 .nav-wrapper {
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #e9ecef;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid #eaeaea;
   z-index: 1000;
   backdrop-filter: blur(8px);
 }
 
 .navbar {
   display: flex;
-  gap: 15px;
+  gap: 24px;
 }
 
 .navbar a {
   display: inline-block;
-  padding: 16px 12px;
+  padding: 16px 0;
   color: #555555;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Slightly tracked out for a cleaner look */
   border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
 }
 
 .navbar a:hover {
@@ -96,13 +102,13 @@ a:hover {
 }
 
 .navbar a.active {
-  color: #0044cc;
-  border-bottom: 2px solid #0044cc;
+  color: #111111;
+  border-bottom: 2px solid #111111;
   font-weight: 600;
   text-decoration: none;
 }
 
-/* --- Core Content Grid --- */
+/* --- Content Grid Layout --- */
 .main-content {
   margin-top: 40px;
 }
@@ -110,7 +116,7 @@ a:hover {
 .layout-grid {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 40px;
+  gap: 50px;
 }
 
 @media (max-width: 768px) {
@@ -118,39 +124,45 @@ a:hover {
     flex-direction: column;
     text-align: center;
   }
+  .profile-info p {
+    text-align: center;
+  }
   .layout-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
   }
   .navbar {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
+    gap: 16px;
   }
   .navbar a {
-    padding: 12px 10px;
+    font-size: 13px;
+    padding: 12px 0;
   }
 }
 
-/* --- Academic Template Cards --- */
+/* --- Clean Content Cards --- */
 .paper-card, .research-card, .info-card {
   background: #ffffff;
-  padding: 28px;
-  border-radius: 8px;
-  border: 1px solid #eef0f2;
-  margin-bottom: 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  padding: 10px 0 24px 0;
+  border-bottom: 1px solid #f1f3f5;
+  margin-bottom: 20px;
+}
+
+.paper-card:last-child, .research-card:last-child, .info-card:last-child {
+  border-bottom: none;
 }
 
 .paper-card h3, .research-card h3, .info-card h3 {
+  font-family: "Times New Roman", Times, Georgia, serif;
   margin-top: 0;
-  margin-bottom: 14px;
-  font-size: 18px;
-  color: #0044cc;
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: #111111;
   font-weight: 600;
 }
 
-/* --- Typography & Lists --- */
+/* --- Core Typography --- */
 p {
   font-size: 15px;
   color: #333333;
@@ -165,43 +177,57 @@ ul {
 
 li {
   font-size: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .pub-type-tag {
   font-size: 11px;
   text-transform: uppercase;
   color: #888888;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   font-weight: 700;
-  margin: 20px 0 8px 0;
+  margin: 28px 0 12px 0;
   display: block;
 }
 
 .venue-text {
   font-style: italic;
-  color: #555555;
+  color: #495057;
 }
 
-/* --- Directory Tables --- */
+/* --- Clean Profile Links Table --- */
 .directory-table {
   width: 100%;
   border-collapse: collapse;
 }
 
 .directory-table td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #e9ecef;
-  font-size: 14px;
+  padding: 10px 0;
+  text-align: left;
+  border-bottom: 1px solid #f1f3f5;
 }
 
-/* --- Footer --- */
+.directory-table tr:last-child td {
+  border-bottom: none;
+}
+
+.directory-table a {
+  font-size: 14.5px;
+  color: #555555;
+  display: block;
+}
+
+.directory-table a:hover {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+/* --- Minimal Footer --- */
 .footer {
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0;
   font-size: 13px;
   color: #888888;
-  margin-top: 50px;
-  border-top: 1px solid #e9ecef;
+  margin-top: 60px;
+  border-top: 1px solid #eaeaea;
 }
