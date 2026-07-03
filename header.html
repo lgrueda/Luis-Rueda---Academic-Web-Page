@@ -1,136 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Header Showcase</title>
+<title>Prof. Luis Rueda - Header</title>
 <link rel="stylesheet" href="styles.css">
-<style>
-  body {
-    margin: 0;
-    padding: 24px;
-    background-color: #ffffff;
-  }
-  .header-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .header-table td {
-    vertical-align: top;
-    border: none;
-  }
-  .avatar-block {
-    width: 110px;
-  }
-  .avatar-img {
-    width: 100px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  .info-block {
-    padding: 0 20px;
-  }
-  .info-title {
-    font-size: 22px;
-    color: #111111;
-    margin: 0 0 6px 0;
-  }
-  .info-sub {
-    font-size: 14px;
-    color: #555555;
-    line-height: 1.5;
-  }
-  .info-sub a {
-    color: #0044cc;
-    text-decoration: none;
-  }
-  .info-sub a:hover {
-    text-decoration: underline;
-  }
-  /* Slideshow Area */
-  .slideshow-container {
-    position: relative;
-    max-width: 450px;
-    float: right;
-  }
-  .mySlides {
-    display: none;
-    text-align: center;
-  }
-  .slide-img {
-    height: 110px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-  }
-  .slide-caption {
-    color: #666666;
-    font-size: 13px;
-    margin-top: 8px;
-    font-weight: 500;
-  }
-</style>
 </head>
-<body>
+<body style="background: transparent; padding: 0; margin: 0;">
 
-<table class="header-table">
-  <tr>
-    <td class="avatar-block">
-      <a href="http://www.uwindsor.ca" target="_blank">
-        <img src="images/Luis Aug 2015.jpg" alt="Luis Rueda" class="avatar-img">
-      </a>
-    </td>
-    <td class="info-block">
-      <h1 class="info-title">Professor Luis Rueda</h1>
-      <div class="info-sub">
-        School of Computer Science<br>
-        University of Windsor<br>
-        Windsor, Ontario, Canada<br>
-        E-mail: lrueda -at- uwindsor.ca<br>
-        Web: <a href="http://luisrueda.cs.uwindsor.ca" target="_top">http://luisrueda.cs.uwindsor.ca</a>
-      </div>
-    </td> 
-    <td>
-      <div class="slideshow-container">
-        <div class="mySlides">
-          <img src="images/CaM-Binding-Protein.png" alt="CaM" class="slide-img">
-          <div class="slide-caption">Prediction of CaM-binding Proteins</div>
-        </div>
-        <div class="mySlides">
-          <img src="images/PCA-Supervised.png" alt="PCA" class="slide-img">
-          <div class="slide-caption">Linear Dimensionality Reduction</div>
-        </div>
-        <div class="mySlides">
-          <img src="images/SLiMonInterface.png" alt="SLiMs" class="slide-img">
-          <div class="slide-caption">Short-linear Motifs</div>
-        </div>
-        <div class="mySlides">
-          <img src="images/Hemoglobin3DStructure.png" alt="PPI" class="slide-img">
-          <div class="slide-caption">Prediction of Obligate PPI</div>
-        </div>
-        <div class="mySlides">
-          <img src="images/Mulit-level-thresholding.png" alt="Thresholding" class="slide-img">
-          <div class="slide-caption">Multi-level Thresholding</div>
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
+<div class="header-container" style="display: flex; width: 100%; padding: 20px; align-items: center; border-bottom: 1px solid #e0e0eb;">
+  <div style="flex: 0 0 120px;">
+    <a href="http://www.uwindsor.ca" target="_blank">
+      <img src="images/Luis Aug 2015.jpg" alt="Luis Rueda" style="width: 100px; height: 120px; border-radius: 4px;">
+    </a>
+  </div>
+  
+  <div style="flex: 1; padding-left: 20px; text-align: left;">
+    <h1 style="margin: 0; font-size: 24px; color: #0000cc;">Professor Luis Rueda</h1>
+    <p style="margin: 5px 0 0 0; font-size: 14px; color: #333; line-height: 1.5;">
+      School of Computer Science<br>
+      University of Windsor<br>
+      Windsor, Ontario, Canada<br>
+      E-mail: lrueda -at- uwindsor.ca<br>
+      Web: <a href="http://luisrueda.cs.uwindsor.ca" target="_top">http://luisrueda.cs.uwindsor.ca</a>
+    </p>
+  </div>
+</div>
 
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 3000);
-}
-</script>
 </body>
 </html>
