@@ -1,240 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Prof. Luis Rueda</title>
-<link rel = "icon" type = "image/png" href = "images/Hemoglobin3DStructure.png">
-
+<title>Prof. Luis Rueda - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ----------------------------- Style Section ---------------------------- -->
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Clean, professional enhancements for an academic site */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  .content-container {
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+  }
+  @media (max-width: 768px) {
+    .profile-grid { grid-template-columns: 1fr; gap: 20px; text-align: center; }
+    .profile-image { margin: 0 auto; }
+  }
+  .profile-image {
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e1e4e6;
+  }
+  .bio-text p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  .social-links-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  .social-links-table td {
+    padding: 12px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e1e4e6;
+  }
+  .social-links-table img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+  .social-links-table img:hover {
+    transform: scale(1.05);
+  }
+  .section-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+  }
+  .news-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .news-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f3f5;
+  }
+  .news-list li:last-child {
+    border-bottom: none;
+  }
+  .news-date {
+    display: inline-block;
+    font-weight: bold;
+    color: #495057;
+    min-width: 100px;
+  }
+</style>
 </head>
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
+<!-- Header Iframe -->
+<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px;" name="iframe_header">
+  <p>Your browser does not support iframes.</p>
 </iframe>
 
-<div  class="header" id="myHeader">
+<!-- Navigation Bar -->
+<div class="header" id="myHeader">
   <div class="navbar">
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a> 
+    <a href="people.html">People</a>  
+    <a href="resources.html">Resources</a>  
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
-<div class="content">
-<head-desc>
-<table style="width:100%; padding:0px;">
-<tr>
-<td>
- <table style="width:100%; padding:0px; scroll:none;">
-   <tr>
-    <td style="width:140px;text-align:center;">
-	  <img class="zoom"  src="images/Luis IWBBIO 2017.jpg" alt="Luis Rueda's Photo" style="width:140px;height:200px;" >
-	</td>
-	
-	<td style="text-align:left;padding:0px 20px 0px 10px;">
-	   <p>I completed my Master's and Ph.D. in Computer Science from <a href="http://www.carleton.ca/" target="_blank">Carleton University</a>, <a href="http://www.ottawatourism.ca/en/" target="_blank" >Ottawa</a>, <a href="https://travel.gc.ca/canadian-tourism" target="_blank">Canada</a>, under the supervision of <a href="http://people.scs.carleton.ca/~oommen/" target="_blank">B. John Oommen</a>. I have been with the <a href="http://www.cs.uwindsor.ca/" target="_blank">School of Computer Science</a> at the <a href="http://www.uwindsor.ca/" target="_blank"> University of Windsor</a>, <a href="https://travel.gc.ca/canadian-tourism" target="_blank">Canada</a>, from 2002, when I joined as assistant professor. I am currently a Full Professor in computer science, since my promotion in 2013. My current research interests are mainly focused on devising  shallow and deep machine learning and representation learning algorithms at the fundamental level and applications in bioinformatics and cybersecurity to problems in protein-protein interaction, transcriptomics, integrative genome-wide analysis, identification of cancer biomarkers, user authentication, spam review detection and social engineering.</p>
+<div class="content-container">
+  <!-- Profile Overview Grid -->
+  <div class="profile-grid">
+    <div>
+      <img class="profile-image" src="images/Luis IWBBIO 2017.jpg" alt="Prof. Luis Rueda">
+    </div>
+    <div class="bio-text">
+      <p>I completed my Master's and Ph.D. in Computer Science from <a href="http://www.carleton.ca/" target="_blank">Carleton University</a> (Ottawa, Canada) under the supervision of <a href="http://people.scs.carleton.ca/~oommen/" target="_blank">B. John Oommen</a>[cite: 5]. I joined the <a href="http://www.cs.uwindsor.ca/" target="_blank">School of Computer Science</a> at the <a href="http://www.uwindsor.ca/" target="_blank">University of Windsor</a> in 2002 as an Assistant Professor, and was promoted to Full Professor in 2013[cite: 5]. My research focuses on developing shallow and deep machine learning frameworks, graph representation learning, and dimensionality reduction models at the fundamental level, alongside applications in single-cell transcriptomics, structural interactomics, biomedical imaging, and recommender systems[cite: 5, 11, 13].</p>
+      <p>I am a Senior Member of the IEEE[cite: 5], and a member of both the International Association for Pattern Recognition (IAPR) and the International Society for Computational Biology (ISCB)[cite: 5]. I serve as an Associate Editor for the *IEEE/ACM Transactions on Computational Biology and Bioinformatics*[cite: 5] and *Network Modeling Analysis in Health Informatics and Bioinformatics*[cite: 5]. I am also a principal investigator of the Machine Learning in Bioinformatics Lab at the University of Windsor[cite: 5].</p>
+      <p>My full Curriculum Vitae can be accessed <a href="CV.pdf" target="_blank"><strong>here</strong></a>[cite: 5].</p>
+    </div>
+  </div>
 
-		<p>I am a Senior Member of the <a href="http://www.ieee.org/index.html" target="_blank"> Institute of Electrical and Electronic Engineers</a> (IEEE) and a member of the <a href="http://www.iapr.org/" target="_blank"> International Association for Pattern Recognition</a> (IAPR) and the <a href="http://www.iscb.org/" target="_blank"> International Society for Computational Biology</a> (ISCB). I am Associate Editor of <a href="https://www.computer.org/csdl/journal/tb" target="_blank"> IEEE/ACM Transactions on Computational Biology and Bioinformatics</a>. I am also a member of the <a href="https://iapr.org/members/newsletter/Newsletter05-02/index_files/Page350.htm" target="_blank">Technical Committee on Pattern Recognition for Bioinformatics</a> (IAPR TC-20) and the program committees of several conferences. I am a principal investigator of the research group on Machine Learning in Bioinformatics Lab at the University of Windsor.</p> 
-		<p> My CV can be accessed <a href="CV.pdf" target="_blank">here</a></p>
-		
-		  </td>
-	
-  </tr>
-</table>
-	
-<hr>
+  <!-- External Scholarly Directories -->
+  <div class="section-card">
+    <h3 style="margin-top:0; color:#0000cc; border-bottom: 2px solid #e0e0eb; padding-bottom: 8px;">Academic Profiles</h3>
+    <table class="social-links-table">
+      <tr>
+        <td><strong>ResearchGate</strong></td>
+        <td><strong>Google Scholar</strong></td>
+        <td><strong>DBLP</strong></td>
+        <td><strong>LinkedIn</strong></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.researchgate.net/profile/Luis_Rueda2" target="_blank"><img src="images/researchgate.png" alt="ResearchGate"></a></td>
+        <td><a href="http://scholar.google.ca/citations?user=2OPjLFkAAAAJ" target="_blank"><img src="images/googlescholar.jpg" alt="Google Scholar"></a></td>
+        <td><a href="http://www.informatik.uni-trier.de/~ley/pers/hd/r/Rueda:Luis" target="_blank"><img src="images/dblp.png" alt="DBLP"></a></td>
+        <td><a href="https://ca.linkedin.com/in/luis-rueda-95838b28" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></td>
+      </tr>
+    </table>
+  </div>
 
-<table style="width:70%; padding:0px;">
-		<tr>
-		<td>You can follow me on...</td>
-		<td style="text-align:center">Research Gate</td>
-		<td style="text-align:center">Google Scholar</td>
-		<td style="text-align:center">DBLP</td>
-		<td style="text-align:center">Linkedin</td>
-		</tr>
-		</tr>
-		<td> </td>
-		<td style="text-align:center">
-        <a href='https://www.researchgate.net/profile/Luis_Rueda2' target="_blank"> <img src="images/researchgate.png" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-		<td style="text-align:center">
-        <a href="http://scholar.google.ca/citations?user=2OPjLFkAAAAJ" target="_blank">
-		<img src="images/googlescholar.jpg" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-		<td style="text-align:center">
-        <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/r/Rueda:Luis" target="_blank">
-		<img src="images/dblp.png" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-		<td style="text-align:center">
-		<a href='https://ca.linkedin.com/in/luis-rueda-95838b28?trk=profile-badge' target="_blank"> <img src="images/linkedin.png" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-		</tr>
-		</table>
-
-<hr>
-
-
-<h4>Latest news</h4>(last Update: April 25th, 2022)</span>
-<ul>
-<b>Note:</b> This page is not being updated frequently and some of the newer events and research projects are not listed here. For more details on my recent research contributions, refer to my <a href="publications.html" target="_self">List of Publications</a>, or follow my research and publications in the most popular scholar databases (see the corresponding links above).
-<li>Nov 30 2023: Keynote Talk at AUCOB 2023: L. Rueda. <a href="https://cobconference.au.edu.kw/" target="_blank">Title: TBA.</a></li>
-<li>Mar 21 2023: Congratulations Shanu Kumar for successfully defending your MSc Thesis!... I wish you the best in your future endeavours!</li>
-<li>Feb 26 2023: New journal publication: A. Vasighizaker, Y. Trivedi, L. Rueda. <a href="https://www.nature.com/articles/s41598-021-03613-0" target="_blank">Cell Type Annotation Model Selection: General-Purpose vs. Pattern-Aware Feature Gene Selection in Single-Cell RNA-Seq Data</a>, Genes, 14(3):596, (2023). DOI: <a href="https://doi.org/10.3390/genes14030596" target="_blank">10.3390/genes14030596 </a>.</li>
-<li>Sep 30 2022: Congratulations Yash Trivedi for successfully defending your MSc Thesis!... I wish you the best in your future endeavours!</li>
-<li>Jun 7 2022: New journal publication: S. Modak, E. Abdel-Raheem, L. Rueda. <a href="https://doi.org/10.1016/j.bea.2023.100076" target="_blank">Applications of deep learning in disease diagnosis of chest radiographs: A survey on materials and methods</a>, Biomedical Engineering Advances. DOI: <a href="" target="_blank">https://doi.org/10.1016/j.bea.2023.100076</a>.</li>
-<li>Apr 19 2022: Congratulations Sheena Hora for successfully defending your MSc Thesis!... I wish you the best in your future endeavours!</li>
-<li>Jan 7 2022: New journal publication: A. Vasighizaker, S. Danda, L. Rueda. <a href="https://www.nature.com/articles/s41598-021-03613-0" target="_blank">Discovering Cell Types Using Manifold Learning and Enhanced Visualization of Single-cell RNA-Seq Data</a>, Scientific Reports, 12, Article number: 120 (2022). DOI: <a href="https://www.nature.com/articles/s41598-021-03613-0" target="_blank">10.1038/s41598-021-03613-0</a>.</li>
-<li>Oct 28 2021: Keynote Talk at IEEE IEMCON 2021: L. Rueda. <a href="https://ieee-iemcon.org/research-talk/" target="_blank">How Self-organizing Maps Empower Convolutional Neural Networks.</a></li>
-<li>Aug 10 2021: New journal publication: M. Naik, L. Rueda, A. Vasighizaker. <a href="https://doi.org/10.1109/TCBB.2021.3104734" target="_blank">Identification of Enriched Regions in ChIP-seq Data via a Linear-time Multi-level Thresholding Algorithm</a>, IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2021, In press. DOI: <a href="https://doi.org/10.1109/TCBB.2021.3104734" target="_blank">https://doi.org/10.1109/TCBB.2021.3104734</a>.</li>
-<li>Apr 22 2021: Congratulations Saiteja Danda for successfully defending your MSc Thesis!... I wish you the best in your future endeavours!</li>
-<li>Apr 18 2021: New journal publication: A. Neisari, S. Saad, L. Rueda. <a href="https://www.sciencedirect.com/science/article/pii/S0167404821000985" target="_blank">Spam Review Detection Using Self-organizing Maps and Convolutional Neural Networks</a>, Computers & Security, 2021, In press. DOI: <a href="https://doi.org/10.1016/j.cose.2021.102274" target="_blank">https://doi.org/10.1016/j.cose.2021.102274</a>.</li>
-<li>May 07 2020: New journal publication: N. Fatima and L. Rueda. <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa500/5837105?guestAccessKey=8307995b-6481-4ba8-8bf0-af4a477f9232" target="_blank">iSOM-GSN: An Integrative Approach for Transforming Multi-omic Data into Gene Similarity Networks via Self-organizing Maps</a>, Bioinformatics, 2020, btaa500, <a href="https://doi.org/10.1093/bioinformatics/btaa500" target="_blank">DOI</a>.</li>
-<li>Apr 16 2020: Congratulations Huy Pham Quang for successfully defending your PhD Thesis... the best wishes for you in the future!</li>
-<li>Apr 1 2020: I have joined the Editorial Board of <a href="https://www.computer.org/csdl/journal/tb" target="_blank"> IEEE Transactions on Computational Biology and Bioinformatics</a>.
-</li>
-<li>Mar 20 2020: Congratulations Osama Hamzeh for successfully defending your PhD Thesis... the best wishes for you in the future!</li>
-<li>Feb 20 2020: New journal publication: A. Alkhateeb, G. Atikukke, L. Porter, B.A. Fifield, D. Cavallo-Medved, J. Facca, Y. El-Gohary, T. Zhang, O. Hamzeh, L. Rueda, S. Kanjeekal (2020). <a href="https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.6_suppl.568" target="_blank">Comprehensive targeted gene profiling to determine the genomic signature likely to drive progression of high-grade nonmuscle invasive bladder cancer to muscle invasive bladder cancer</a>, Journal of Clinical Oncology, 38(6_suppl):568-568.</li>
-</ul>
-<hr>
-
-<h4><a href="prospective-students.html"> Prospective Students</a></h4>
-<p>
-Prospective MSc and PhD students interested in working on their thesis under my supervision shall follow the formal process for applying to the corresponding program. Refer to the <a href="prospective-students.html"> Prospective Students</a> page for more details.</p>
-<hr>
-
-<h4>Recent Awards</h4>
-<ul>
-<li>Nominated for the Student Mentoring Award. Faculty of Science, University of Windsor, 2022.</li>
-<li>Mitacs Accelerate Award. Mitacs & Office of Research and Innovation Services, University of Windsor, 2021.</li>
-<li>Mitacs Accelerate Award. Mitacs & Office of Research and Innovation Services, University of Windsor, 2020.</li>
-<li>Ontario Centres of Excellence -- TalentEdge Award. University of Windsor, 2018.</li>
-<li>Collaborative Interdisciplinary Research Award. Faculty of Science, University of Windsor, 2016.</li>
-<li>Runner up for Best Paper Award -- Travel Award. Paper presented at CIBCB 2015. S. Singireddy, A. Alkhateeb, I. Rezaeian, D. Cavallo-Medved, L. Porter, L. Rueda, "Identifying Differentially Expressed Transcripts Associated with Prostate Cancer Progression using RNA-Seq and Machine Learning Techniques", Niagara Falls, Canada, 2015.</li>
-<li>Certificate of Appreciation. In recognition for contributions toward the development of the Master's of Applied Computing Program. Faculty of Science, University of Windsor, 2015.</li>
-<li>I have been awarded a <a href="http://windsorcancerfoundation.org/index.php?option=com_content&amp;view=article&amp;id=11&amp;Itemid=14" target="_blank">Seeds4Hope </a>grant by the <a href="http://windsorcancerfoundation.org/" target="_blank">Windsor-Essex County Cancer Centre Foundation</a>. Latest story in the <a  href="http://blogs.windsorstar.com/2013/10/30/seeds4hope-funds-local-cancer-research/" target="_blank">Windsor Star</a>.</li>
-</ul>
-
-<hr>
-
-<h4>Upcoming Conferences</h4>
-<ul>
-<li><a href="https://cobconference.au.edu.kw/" target="_blank">AUCOB 2023</a>: International Scientific Conference on Digitalization, Innovations & Sustainable Deveopment, November 29-30, Istanbul, Turkey. </li>
-
-<li><a href="http://recomb2023.bilkent.edu.tr/" target="_blank">RECOMB 2023</a>: The 27th Annual International Conference on Research in Computational Molecular Biology, April 16-19, Istanbul, Turkey. </li>
-
-<li><a href="https://www.iscb.org/ismbeccb2023" target="_blank">ISMB 2023</a>: The 31st Annual International Conference on Intelligent Systems for Molecular Biology, July 23-27. Lyon, France.</li>
-
-<li><a href="https://bidma.cpsc.ucalgary.ca/IEEE-BIBM-2023/" target="_blank">BIBM 2023</a>: The 2023 IEEE International Conference on Bioinformatics and Biomedicine, December 5-8, Istanbul, Turkey.</li>
-
-<li><a href="" target="_blank">ACM-BCB 2022</a>: The 13th ACM Conference on Bioinformatics, Computational Biology and Biomedicine, Aug 7-10. Chicago, IL, USA.</span></li>
-
-<li><a href="https://icpr2024.org/" target="_blank">ICPR 2024</a>: The 27th International Conference on Pattern Recognition, December 1-5, Kolkata, India.</span></span></li>
-
-<li><a href="https://cmte.ieee.org/cis-bbtc/cibcb2023/" target="_blank">IEEE CIBCB 2023</a>: 20th IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology, Augus 29-31, Eidhoven, The Netherlands.</span></span></li>
-
-<li><a href="https://www.iapr.org/conferences/" target="_blank">IAPR</a> Sponsered Conferences.</li>
-<li><a href="https://www.iscb.org/iscb-conferences" target="_blank">ISCB</a> Sponsored Conferences.</li>
-</ul>
-
-<hr>
-
-<h4>Contact Information</h4>
-<p style="padding:0px 0px 0px 30px">
-School of Computer Science<br>
-University of Windsor<br>
-401 Sunset Ave., Windsor, ON, N9B 3P4, Canada<br>
-Phone: +1 519-253-3000 x 3002<br>
-E-mail: lrueda -at- uwindsor.ca<br>
-Main Portal: <a href="http://luisrueda.cs.uwindsor.ca/" target="_self">http://luisrueda.cs.uwindsor.ca</a><br>
-</p>
-</td>
-
-<td valign="top">
-  <!-- <table style="width:100%; padding:0px;">
-  <td>
-  <a href='https://ca.linkedin.com/in/luis-rueda-95838b28?trk=profile-badge' target="_blank"> <img src="images/linkedin.png" alt="Luis Rueda" style="width:60px;height:60px;"></a></td>
-  
-  <td>  <a href='https://www.researchgate.net/profile/Luis_Rueda2' target="_blank"> <img src="images/researchgate.png" alt="Luis Rueda" style="width:60px;height:60px;"></a></td>
-   </table> -->
-   <br>
-   <span style="font-size:14;color:#ffad33"> Associate Editor</span>
-   <a href='https://www.computer.org/csdl/journal/tb' target="_blank"> <img src="images/IEEE-TCBB-cover.jpg" alt="IEEE-TCBB" height="200" width="140"></a>
-   <br><br>
- <span style="font-size:14;color:#ffad33"> Associate Editor</span>
-   <a href='https://www.springer.com/journal/13721' target="_blank"> <img src="images/NetMAHIB.jpg" alt="NetMAHIB" height="200" width="140"></a>
-   <br><br>
-   <span style="font-size:14;color:#ffad33"> Guest Editor</span>
-   <a href='https://www.frontiersin.org/research-topics/25993/artificial-intelligence-for-drug-design-development-and-therapy' target="_blank"> <img src="images/FrontiersPharmacology.png" alt="Frontiers" height="200" width="140"></a>
-   <br><br>
-   <span style="font-size:14;color:#ffad33"> Guest Editor</span>
-   <a href='https://www.journals.elsevier.com/neurocomputing/call-for-papers/special-issue-on-deep-neural-networks-for-precision-medicine' target="_blank"> <img src="images/Neurocomputing.gif" alt="Neurocomputing" height="200" width="140"></a>
-   <br><br>
-   <span style="font-size:14;color:#ffad33"> Guest Editor</span>
-   <a href='https://journals.sagepub.com/page/evb/collections/special-collections/machine-learning-models-data-integration' target="_blank"> <img src="images/EvolutionaryBioinformatics.jpg" alt="Evolutionary" height="200" width="140"></a>
-   <br><br>
-   <span style="font-size:14;color:#ffad33"> Microrray Book</span>
-   <a href='book-microarray.html' target="_top"> <img src="images/MicroarrayImageDataAnalysis.png" alt="Microarray Data Analysis" height="200" width="140"></a>
-   
-   <br>
-   
-</td>
-</table>
-
-</head-desc>
+  <!-- Clean Recent News Section -->
+  <div class="section-card">
+    <h3 style="margin-top:0; color:#0000cc; border-bottom: 2px solid #e0e0eb; padding-bottom: 8px;">Recent Updates</h3>
+    <ul class="news-list">
+      <li><span class="news-date">2026</span> Co-authored new survey insights on contrastive learning methods in molecular representation featured in *Briefings in Bioinformatics*[cite: 13].</li>
+      <li><span class="news-date">2025</span> Published state-of-the-art developments in ligand-receptor heterophily-aware neural network architectures at IEEE BIBM[cite: 13].</li>
+      <li><span class="news-date">2024</span> Introduced *SEGCECO* for subgraph embedding of gene expression metrics in cell-to-cell communication networks[cite: 13].</li>
+      <li><span class="news-date">2023</span> Addressed cell type annotation model optimization and general-purpose feature gene selections inside the journal *Genes*[cite: 13].</li>
+    </ul>
+  </div>
 </div>
 
-<br>
-<!-- --------------------------- Footer -------------------------- --> 
+<!-- Footer -->
 <div class="footer">
-    <p> &#9400; Luis Rueda, 2022</p>
+  <p>&#9400; Luis Rueda, 2026</p>
 </div>
-
-
-<!-- ------------------------- Script Section ---------------------- -->
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
+window.onscroll = function() { stickyNavbar() };
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
-function myFunction() {
+function stickyNavbar() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
 }
-
-
 </script>
 </body>
 </html>
