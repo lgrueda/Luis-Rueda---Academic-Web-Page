@@ -4,99 +4,14 @@
 <title>Prof. Luis Rueda - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
-<style>
-  /* Clean, professional enhancements for an academic site */
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
-  }
-  .content-container {
-    max-width: 1140px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  .profile-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 40px;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-  }
-  @media (max-width: 768px) {
-    .profile-grid { grid-template-columns: 1fr; gap: 20px; text-align: center; }
-    .profile-image { margin: 0 auto; }
-  }
-  .profile-image {
-    width: 160px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 4px;
-    border: 1px solid #e1e4e6;
-  }
-  .bio-text p {
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-  .social-links-table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
-  }
-  .social-links-table td {
-    padding: 12px;
-    text-align: center;
-    background: #ffffff;
-    border: 1px solid #e1e4e6;
-  }
-  .social-links-table img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.2s;
-  }
-  .social-links-table img:hover {
-    transform: scale(1.05);
-  }
-  .section-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-  }
-  .news-list {
-    list-style: none;
-    padding-left: 0;
-  }
-  .news-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid #f1f3f5;
-  }
-  .news-list li:last-child {
-    border-bottom: none;
-  }
-  .news-date {
-    display: inline-block;
-    font-weight: bold;
-    color: #495057;
-    min-width: 100px;
-  }
-</style>
 </head>
 <body>
 
-<!-- Header Iframe -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px;" name="iframe_header">
+<iframe height="210px" width="100%" scrolling="no" src="header.html" style="border:none;" name="iframe_header">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
-<!-- Navigation Bar -->
-<div class="header" id="myHeader">
+<div id="myHeader">
   <div class="navbar">
     <a href="index.html" class="active">Home</a>
     <a href="research.html">Research</a>
@@ -108,50 +23,40 @@
 </div>
 
 <div class="content-container">
-  <!-- Profile Overview Grid -->
   <div class="profile-grid">
     <div>
       <img class="profile-image" src="images/Luis IWBBIO 2017.jpg" alt="Prof. Luis Rueda">
     </div>
-    <div class="bio-text">
+    <div>
       <p>I completed my Master's and Ph.D. in Computer Science from <a href="http://www.carleton.ca/" target="_blank">Carleton University</a> (Ottawa, Canada) under the supervision of <a href="http://people.scs.carleton.ca/~oommen/" target="_blank">B. John Oommen</a>[cite: 5]. I joined the <a href="http://www.cs.uwindsor.ca/" target="_blank">School of Computer Science</a> at the <a href="http://www.uwindsor.ca/" target="_blank">University of Windsor</a> in 2002 as an Assistant Professor, and was promoted to Full Professor in 2013[cite: 5]. My research focuses on developing shallow and deep machine learning frameworks, graph representation learning, and dimensionality reduction models at the fundamental level, alongside applications in single-cell transcriptomics, structural interactomics, biomedical imaging, and recommender systems[cite: 5, 11, 13].</p>
       <p>I am a Senior Member of the IEEE[cite: 5], and a member of both the International Association for Pattern Recognition (IAPR) and the International Society for Computational Biology (ISCB)[cite: 5]. I serve as an Associate Editor for the *IEEE/ACM Transactions on Computational Biology and Bioinformatics*[cite: 5] and *Network Modeling Analysis in Health Informatics and Bioinformatics*[cite: 5]. I am also a principal investigator of the Machine Learning in Bioinformatics Lab at the University of Windsor[cite: 5].</p>
       <p>My full Curriculum Vitae can be accessed <a href="CV.pdf" target="_blank"><strong>here</strong></a>[cite: 5].</p>
     </div>
   </div>
 
-  <!-- External Scholarly Directories -->
   <div class="section-card">
-    <h3 style="margin-top:0; color:#0000cc; border-bottom: 2px solid #e0e0eb; padding-bottom: 8px;">Academic Profiles</h3>
+    <h3>Academic Profiles</h3>
     <table class="social-links-table">
       <tr>
-        <td><strong>ResearchGate</strong></td>
-        <td><strong>Google Scholar</strong></td>
-        <td><strong>DBLP</strong></td>
-        <td><strong>LinkedIn</strong></td>
-      </tr>
-      <tr>
-        <td><a href="https://www.researchgate.net/profile/Luis_Rueda2" target="_blank"><img src="images/researchgate.png" alt="ResearchGate"></a></td>
-        <td><a href="http://scholar.google.ca/citations?user=2OPjLFkAAAAJ" target="_blank"><img src="images/googlescholar.jpg" alt="Google Scholar"></a></td>
-        <td><a href="http://www.informatik.uni-trier.de/~ley/pers/hd/r/Rueda:Luis" target="_blank"><img src="images/dblp.png" alt="DBLP"></a></td>
-        <td><a href="https://ca.linkedin.com/in/luis-rueda-95838b28" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></td>
+        <td><a href="https://www.researchgate.net/profile/Luis_Rueda2" target="_blank">ResearchGate</a></td>
+        <td><a href="http://scholar.google.ca/citations?user=2OPjLFkAAAAJ" target="_blank">Google Scholar</a></td>
+        <td><a href="http://www.informatik.uni-trier.de/~ley/pers/hd/r/Rueda:Luis" target="_blank">DBLP</a></td>
+        <td><a href="https://ca.linkedin.com/in/luis-rueda-95838b28" target="_blank">LinkedIn</a></td>
       </tr>
     </table>
   </div>
 
-  <!-- Clean Recent News Section -->
   <div class="section-card">
-    <h3 style="margin-top:0; color:#0000cc; border-bottom: 2px solid #e0e0eb; padding-bottom: 8px;">Recent Updates</h3>
+    <h3>Recent Updates</h3>
     <ul class="news-list">
       <li><span class="news-date">2026</span> Co-authored new survey insights on contrastive learning methods in molecular representation featured in *Briefings in Bioinformatics*[cite: 13].</li>
-      <li><span class="news-date">2025</span> Published state-of-the-art developments in ligand-receptor heterophily-aware neural network architectures at IEEE BIBM[cite: 13].</li>
+      <li><span class="news-date">2025</span> Published state-of-the-art developments in ligand-receptor heterophily-aware hypergraph neural network architectures at IEEE BIBM[cite: 13].</li>
       <li><span class="news-date">2024</span> Introduced *SEGCECO* for subgraph embedding of gene expression metrics in cell-to-cell communication networks[cite: 13].</li>
       <li><span class="news-date">2023</span> Addressed cell type annotation model optimization and general-purpose feature gene selections inside the journal *Genes*[cite: 13].</li>
     </ul>
   </div>
 </div>
 
-<!-- Footer -->
 <div class="footer">
   <p>&#9400; Luis Rueda, 2026</p>
 </div>
@@ -162,11 +67,8 @@ var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
 function stickyNavbar() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+  if (window.pageYOffset > sticky) { header.classList.add("sticky"); } 
+  else { header.classList.remove("sticky"); }
 }
 </script>
 </body>
