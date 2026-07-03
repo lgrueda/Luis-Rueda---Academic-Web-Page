@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Prof. Luis Rueda - Research Domains</title>
+<title>Prof. Luis Rueda - Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<iframe height="210px" width="100%" scrolling="no" src="header.html" style="border:none;" name="iframe_header">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor[cite: 5]</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html" class="active">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="teaching.html">Teaching</a> 
-    <a href="people.html">People</a>  
-    <a href="resources.html">Resources</a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a> 
+      <a href="people.html">People</a>  
+      <a href="resources.html">Resources</a>  
+    </nav>
   </div>
 </div>
 
-<div class="content-container">
-  <h2>Active Research Fields</h2>
-  <p style="margin-bottom: 30px;">Our laboratory designs machine learning solutions for multi-scale biological frameworks and computational intelligence systems[cite: 5, 11, 13]. Here is an overview of our seven active categories based on our production pipeline[cite: 13]:</p>
+<div class="container main-content">
+  <h2>Research Fields</h2>
+  <p style="margin-bottom: 30px; color: #666;">Our group works on foundational machine learning paradigms and applications across seven areas[cite: 5, 13]:</p>
 
   <div class="research-card">
     <h3>1. Single-Cell RNA-Seq, Genomics and Multi-Omics</h3>
-    <p>Investigating mathematical techniques to partition high-dimensional transcriptomics profiles[cite: 11, 13]. This encompasses pattern-aware gene selection mechanisms, cell-type annotation metrics, and parallel data-clustering implementations[cite: 13].</p>
+    <p>Developing robust mathematical models to identify cell-type annotations and handle transcriptomics distributions[cite: 11, 13]. Projects focus on pattern-aware gene selection models, manifold learning algorithms, and privacy-preserving framework clusters[cite: 13].</p>
   </div>
 
   <div class="research-card">
     <h3>2. Cell-Cell Communication and Molecular Interactions</h3>
-    <p>Developing structural representations to unpack complex ligand-receptor interactions[cite: 13]. Our methodologies build on molecular contrastive learning and subgraph embedding techniques to predict cellular interfaces accurately[cite: 13].</p>
+    <p>Formulating subgraph embedding methods to evaluate cell-to-cell communication networks[cite: 13]. We investigate contrastive learning platforms to predict protein-protein interaction interfaces and map sequence constraints[cite: 6, 13].</p>
   </div>
 
   <div class="research-card">
     <h3>3. Biomedical Imaging and Image Analysis</h3>
-    <p>Creating lighter machine learning variants for nodule detection and target isolation on medical scans[cite: 13]. This research implements Delaunay triangulation networks, point-cloud optimizations, and positional convolutions to improve diagnostics on chest radiographs and CT scans[cite: 13].</p>
+    <p>Designing lightweight graph machine learning models for nodule segmentation and tracking on computed tomography (CT) images[cite: 13]. We implement positional convolutions, Delaunay triangulations, and superpixel partitions to decrease false positives[cite: 13].</p>
   </div>
 
   <div class="research-card">
     <h3>4. Recommender Systems</h3>
-    <p>Constructing contextual collaborative filtering systems and authentication methods[cite: 13]. Our current projects integrate Graph Attention Networks with modern Large Language Models to simulate real-world user feedback spaces and detect review frauds[cite: 13].</p>
+    <p>Integrating Graph Attention Networks with modern Large Language Model (LLM) agents to enhance end-to-end personalization[cite: 13]. Additionally, we explore adversarial systems like neural network detectors for review spam filtering[cite: 13].</p>
   </div>
 
   <div class="research-card">
     <h3>5. Hypergraph Neural Networks</h3>
-    <p>Developing non-linear deep models that expand past traditional edge constraints[cite: 13]. This covers multi-node hypergraph systems that resolve cell-type heterophily and spatial domains across single-cell datasets[cite: 13].</p>
+    <p>Exploring structural hypergraph neural network systems to track spatial domains from single-cell transcriptomics data where relationships extend past basic pairwise connections[cite: 13].</p>
   </div>
 
   <div class="research-card">
     <h3>6. Associative Memory Models</h3>
-    <p>Analyzing modern Hopfield layouts and latent prototype discovery frameworks[cite: 13]. These models upgrade out-of-distribution tracking and error resistance traits within heavy neural setups[cite: 13].</p>
+    <p>Utilizing modern Hopfield neural network architectures to advance out-of-distribution (OOD) processing security, data pattern recovery, and latent prototype discovery[cite: 13].</p>
   </div>
 
   <div class="research-card">
     <h3>7. Cancer Research and Clinical Disease Diagnostics</h3>
-    <p>Translating statistical learning frameworks into targeted clinical discovery panels[cite: 7, 13]. Research lines include identifying cross-platform transcriptomics biomarkers for prostate cancer, metabolomic screens for young-onset colon cancer, and sub-type drug repurposing models[cite: 7, 13].</p>
+    <p>Developing multi-omic data integration pipelines to identify clinical biomarkers and mutations across colorectal, bladder, and breast cancer subtypes[cite: 7, 13].</p>
   </div>
 </div>
 
-<div class="footer">
-  <p>&#9400; Luis Rueda, 2026</p>
-</div>
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-<script>
-window.onscroll = function() { stickyNavbar() };
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function stickyNavbar() {
-  if (window.pageYOffset > sticky) { header.classList.add("sticky"); } 
-  else { header.classList.remove("sticky"); }
-}
-</script>
 </body>
 </html>
