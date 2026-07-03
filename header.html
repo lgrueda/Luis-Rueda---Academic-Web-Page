@@ -1,199 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
-
-<!-- ----------------------------- Style Section ---------------------------- -->
+<title>Header Showcase</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-* {box-sizing: border-box}
-
-.mySlides {display: none}
-
-img {horizontal-align:center;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position:relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position:absolute;
-  top: 95%;
-  width: auto;
-  padding: 0px;
-  margin-top: 0px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Position the "previous button" to the right */
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color:  #8080ff;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: -18px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/4 etc) */
-.numbertext {
-  color: light-blue;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  right:0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-td {
-  vertical-align: top;
-}
+  body {
+    margin: 0;
+    padding: 24px;
+    background-color: #ffffff;
+  }
+  .header-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .header-table td {
+    vertical-align: top;
+    border: none;
+  }
+  .avatar-block {
+    width: 110px;
+  }
+  .avatar-img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .info-block {
+    padding: 0 20px;
+  }
+  .info-title {
+    font-size: 22px;
+    color: #111111;
+    margin: 0 0 6px 0;
+  }
+  .info-sub {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+  }
+  .info-sub a {
+    color: #0044cc;
+    text-decoration: none;
+  }
+  .info-sub a:hover {
+    text-decoration: underline;
+  }
+  /* Slideshow Area */
+  .slideshow-container {
+    position: relative;
+    max-width: 450px;
+    float: right;
+  }
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  .slide-img {
+    height: 110px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .slide-caption {
+    color: #666666;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
 </style>
-
-
 </head>
+<body>
 
-<body style="scrolling:no; padding:0px 0px;">
-<!-- ------------------------------ Header ----------------------------------- -->
-<div>
-<table style="width:100%; padding:0px; scroll:none;">
+<table class="header-table">
   <tr>
-    <td style="width:90px;padding:20px 0px;><a href="http://www.uwindsor.ca" target="_blank"> <img src="images/Luis Aug 2015.jpg" alt="Luis Rueda" style="float:left;width:100px;height:120px;"></a></td>
-    <td style="text-align:left; width:350px;"><div style="padding:20px 10px;"><span style="font-size:18px; color:#0000cc;"> 
-	<b>Professor Luis Rueda</b><br> 
-	<span style="font-size:14px;"> 
-	School of Computer Science<br>
-	University of Windsor<br>
-	Windsor, Ontario, Canada<br>
-	E-mail: lrueda -at- uwindsor.ca<br>
-	Web: <a href="http://luisrueda.cs.uwindsor.ca" target="_top" > http://luisrueda.cs.uwindsor.ca</a>
-	</span></span>
-	</div></td> 
-	
-    <td style="text-align:center;">
-	<div class="slideshow-container">
-
-	<div class="mySlides fade">
-	  <!-- <div class="numbertext">1 / 5</div> -->
-	  <img src="images/CaM-Binding-Protein.png" alt="CaM-Binding-Protein" style="width:280px;height:220px; padding:0px 0px">
-	  <div class="text">Prediction of CaM-binding Proteins</div>
-	</div>
-
-	<div class="mySlides fade">
-	  <!-- <div class="numbertext">2 / 5</div> -->
-	  <img src="images/PCA-Supervised.png" alt="CaM-Binding-Protein" style="width:320px;height:220px; padding:0px 0px">
-	  <div class="text">Linear Dimensionality Redcution</div>
-	</div>
-
-	<div class="mySlides fade">
-	  <!-- <div class="numbertext">3 / 5</div> -->
-	  <img src="images/SLiMonInterface.png" alt="CaM-Binding-Protein" style="width:360px;height:220px; padding:0px 0px">
-	  <div class="text">Short-linear Motifs</div>
-	</div>
-
-    <div class="mySlides fade">
-	  <!-- <div class="numbertext">4 / 5</div> -->
-	  <img src="images/Hemoglobin3DStructure.png" alt="CaM-Binding-Protein" style="width:300px;height:220px; padding:0px 0px">
-	  <div class="text">Prediction of Obligate PPI</div>
-	</div>
-
-    <div class="mySlides fade">
-	  <!-- <div class="numbertext">5 / 5</div> -->
-	  <img src="images/Mulit-level-thresholding.png" alt="CaM-Binding-Protein" style="width:480px;height:220px; padding:0px 0px">
-	  <div class="text">Multi-level Thresholding</div>
-	</div>
-
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-	</div>
-	<br>
-
-	<div style="text-align:center">
-	  <span class="dot" onclick="currentSlide(1)"></span> 
-	  <span class="dot" onclick="currentSlide(2)"></span> 
-	  <span class="dot" onclick="currentSlide(3)"></span> 
-	  <span class="dot" onclick="currentSlide(4)"></span> 
-	  <span class="dot" onclick="currentSlide(5)"></span> 
-	</div>
-	</td>
-
-
-<!--
-	<td style="text-align:center;">
-	<img src="images/CaM-Binding-Protein.png" alt="CaM-Binding-Protein" style="float:left;width:165px;height:130px; padding:0px 0px">
-	<img src="images/PCA-Supervised.png" alt="PCA Supervised" style="float:right;width:165px;height:130px; padding:0px 0px">
-	Welcome to my new portal!... Prospective students click <a href="prospective-students.html" target="_top">here</a>.</td> -->
+    <td class="avatar-block">
+      <a href="http://www.uwindsor.ca" target="_blank">
+        <img src="images/Luis Aug 2015.jpg" alt="Luis Rueda" class="avatar-img">
+      </a>
+    </td>
+    <td class="info-block">
+      <h1 class="info-title">Professor Luis Rueda</h1>
+      <div class="info-sub">
+        School of Computer Science<br>
+        University of Windsor<br>
+        Windsor, Ontario, Canada<br>
+        E-mail: lrueda -at- uwindsor.ca<br>
+        Web: <a href="http://luisrueda.cs.uwindsor.ca" target="_top">http://luisrueda.cs.uwindsor.ca</a>
+      </div>
+    </td> 
+    <td>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="images/CaM-Binding-Protein.png" alt="CaM" class="slide-img">
+          <div class="slide-caption">Prediction of CaM-binding Proteins</div>
+        </div>
+        <div class="mySlides">
+          <img src="images/PCA-Supervised.png" alt="PCA" class="slide-img">
+          <div class="slide-caption">Linear Dimensionality Reduction</div>
+        </div>
+        <div class="mySlides">
+          <img src="images/SLiMonInterface.png" alt="SLiMs" class="slide-img">
+          <div class="slide-caption">Short-linear Motifs</div>
+        </div>
+        <div class="mySlides">
+          <img src="images/Hemoglobin3DStructure.png" alt="PPI" class="slide-img">
+          <div class="slide-caption">Prediction of Obligate PPI</div>
+        </div>
+        <div class="mySlides">
+          <img src="images/Mulit-level-thresholding.png" alt="Thresholding" class="slide-img">
+          <div class="slide-caption">Multi-level Thresholding</div>
+        </div>
+      </div>
+    </td>
   </tr>
 </table>
-
 
 <script>
 var slideIndex = 0;
@@ -202,20 +123,14 @@ showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000);
 }
-</script></script>
-
+</script>
 </body>
 </html>
