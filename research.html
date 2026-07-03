@@ -1,127 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Prof. Luis Rueda</title>
-
+<title>Prof. Luis Rueda - Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ----------------------------- Style Section ---------------------------- -->
 <link rel="stylesheet" href="styles.css">
-
+<style>
+  .content-container { max-width: 1140px; margin: 40px auto; padding: 0 20px; }
+  .research-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+  }
+  .research-card h3 {
+    margin-top: 0;
+    color: #0000cc;
+    border-bottom: 1px solid #e1e4e6;
+    padding-bottom: 8px;
+  }
+  .research-card p {
+    text-align: justify;
+  }
+</style>
 </head>
-
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
+<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px;" name="iframe_header">
+  <p>Your browser does not support iframes.</p>
 </iframe>
 
-<div  class="header" id="myHeader">
+<div class="header" id="myHeader">
   <div class="navbar">
     <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+    <a href="research.html" class="active">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a> 
+    <a href="people.html">People</a>  
+    <a href="resources.html">Resources</a>  
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
+<div class="content-container">
+  <h2>Core Research Domains</h2>
+  <p style="margin-bottom: 30px;">Our laboratory maps computational models to complex molecular networks and engineering problems, focusing primarily on foundational machine learning paradigms and data integration pipelines across seven distinct fields[cite: 13].</p>
 
-<div> 
-<head-desc>
-<h2> Research </h2>
+  <!-- 1 -->
+  <div class="research-card">
+    <h3>1. Single-Cell RNA-Seq, Genomics and Multi-Omics</h3>
+    <p>Investigating mathematical frameworks to partition high-dimensional cellular expressions[cite: 13]. This covers advanced gene selection approaches, cell-type annotation model selections, and parallel clustering pipelines optimized specifically to process heavy transcriptomics and multi-omic data matrices safely and efficiently[cite: 13].</p>
+  </div>
 
-<p>My main research interests and contributions are focused on devising new shallow and deep machine learning algorithms with applications in interactomics and transcriptomics. The main applications are on general problems in these fields and on the role of these in finding biomarkers in different type of cancer, as well as on the role of motifs and other predictive features in protein interactions, Calmodulin binding proteins and drug-protien interactions. Below is a summary of my interests and contributions in the respective fields.</p>
+  <!-- 2 -->
+  <div class="research-card">
+    <h3>2. Cell-Cell Communication and Molecular Interactions</h3>
+    <p>Developing structural representations and network embeddings to decode ligand-receptor dynamics[cite: 6, 13]. By analyzing physicochemical environments and subgraph embeddings, our methods reconstruct potential protein isoforms and accurately map out molecular interactions between individual cell clusters[cite: 6, 13].</p>
+  </div>
 
-<p><b> Note:</b> This page is not being updated frequently and some of the newer research projects are not listed here. For more details on my recent research contributions, refer to my <a href="publications.html" target="_self">List of Publications</a>, or follow my research and publications in the most popular scholar databases:
+  <!-- 3 -->
+  <div class="research-card">
+    <h3>3. Biomedical Imaging and Image Analysis</h3>
+    <p>Designing lightweight architectures for object recognition, segmentation, and feature classification within medical imaging matrices[cite: 13]. Key directions utilize patchwise iterative graph clustering, Delaunay triangulations, and superpixel graph propagation to refine target detection on Computed Tomography (CT) scans and chest radiographs[cite: 13].</p>
+  </div>
 
-<table style="width:100%; padding:0px;">
-	<tr>
-		<td style="text-align:center">Research Gate</td>
-		<td style="text-align:center">Google Scholar</td>
-		<td style="text-align:center">DBLP</td>
-		</tr>
-		</tr>
-		<td style="text-align:center">
-        <a href='https://www.researchgate.net/profile/Luis_Rueda2' target="_blank"> <img src="images/researchgate.png" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-		<td style="text-align:center">
-        <a href="http://scholar.google.ca/citations?user=2OPjLFkAAAAJ" target="_blank">
-		<img src="images/googlescholar.jpg" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-		<td style="text-align:center">
-        <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/r/Rueda:Luis" target="_blank">
-		<img src="images/dblp.png" alt="Luis Rueda" style="width:60px;height:60px;"></a>
-		</td>
-	</tr>
-</table>
+  <!-- 4 -->
+  <div class="research-card">
+    <h3>4. Recommender Systems</h3>
+    <p>Exploring personalization infrastructures that integrate Graph Attention Networks (GATs) with contemporary Large Language Model (LLM) agents[cite: 13]. This research domain focuses on contextual collaborative filtering, online user feedback simulation environments, and adversarial fraud mitigations such as neural spam review detectors[cite: 13].</p>
+  </div>
 
-</p>
+  <!-- 5 -->
+  <div class="research-card">
+    <h3>5. Hypergraph Neural Networks</h3>
+    <p>Advancing structural deep learning methods beyond pairwise restrictions[cite: 13]. Our research maps multi-node hyperedge topologies to discover functional spatial domains in complex single-cell transcriptomics data while creating polynomial-time construction algorithms under constrained densest subgraphs[cite: 13].</p>
+  </div>
 
-<h4><a href="machine-learning.html">Machine Learning</a></h4>
+  <!-- 6 -->
+  <div class="research-card">
+    <h3>6. Associative Memory Models</h3>
+    <p>Analyzing modern Hopfield networks and spiced covariance frameworks to augment out-of-distribution (OOD) data handling[cite: 13]. These structural models optimize prototype discovery within hidden latent variables while establishing mathematically sound corruption-resistance properties across deep data spaces[cite: 13].</p>
+  </div>
 
-<p>Computers can learn like human beings, from observations, examples, images, sensors, data, and experience. Machine learning is a field of artificial intelligence that involves the design and implementation of algorithms for computers to evolve their behavior from observations, examples, images, sensors, data, and experience, among many other sources. My main research in machine learning is on developing shallow and deep learning algorithms for classification, clustering, feature selection, dimensionality reduction, representation learning and performance evaluation, with applications to interactomics, transcriptomics and data integration. One of my most recent works is iSOM-GSN, a novel approach that combines self-organizing maps and convolutional neural networks for deriving gene similarity networks and prediction of disease states represented as graphs. More information about my research in this field can be found in the <a href="machine-learning.html">Machine Learning</a> page.</p>
-
-<h4><a href="transcriptomics.html" target="_self">Transcriptomics</a></h4>
-
-<p>The transcriptome represents the repertoire of transcripts in an organism as the main product of DNA transcription and splicing. The Human genome comprises 3 billion bases on each of (on average 10<sup>14</sup>) cells in one body, where each cell may contain up to 300k RNA molecules. Then, the full transcriptome may contain approximately 8.4<sup>23</sup> RNA bases... in one body! One cell line/condition, manifested in terms of transcriptomics data, could imply 30Mb of microarray data or 30Gb of RNA-seq data, while for all cells in one body the figure could grow up to <a href="http://simple.wikipedia.org/wiki/Petabyte" target="_blank">petabytes</a> or <a href="http://simple.wikipedia.org/wiki/Exabyte" target="_blank">exabytes</a>. </p>
-
-<p>Transcriptomics studies have been traditionally carried out using microarray technologies and more recently, using the emerging next generation sequencing techniques known as RNA-seq. My main research in transcriptomics has been centered in the main aspects of microarray data analysis, with emphasis on DNA microarray image gridding and segmentation, as well as gene selection, biomarker detection and clustering time-time series gene expression data. </p>
-
-<p>Currently, my research focuses on RNA-seq data analysis, aiming at finding relevant enriched regions in RNA-seq and ChIP-seq data and studying the underlying mechanisms of alternative splicing, its relationship with non-coding RNA, as well as their translation into protein isoforms and associated functions, with applications to the discovery of new biomarkers in breast and prostate cancers. One of the main goals is to understand the relationships among different protein variants yielded by alternative splicing and the integration with interactomics: the inherent functions as a result of protein interactions, the underlying domains and short motifs involved, and the dynamics of the interactome. A more recent project involves the study of spatial relationships among cells in single-cell RNA-seq data using graph representation learning approaches. More details are in the <a href="transcriptomics.html">Transcriptomics</a> page.</p>
-
-<h4><a href="interactomics.html">Interactomics</a></h4>
-
-<p>The interactome involves proteins and associated molecules interacting in a living system. The interactome is rather dynamic as the interactions and ultimately proteins' functions are manifested in a temporal and spatial manner. To understand the complex cellular mechanisms involved in a biological system, it is necessary to study the nature and specificity of these interactions and the dynamics involved in it at the molecular level, for which prediction of protein-protein interactions (PPIs) has played a significant role. In a broad sense, my main research in interactomics aims to develop machine learning algorithms for prediction and analysis of PPIs from high-throughput data, understanding the dynamic aspects of these interactions and their relationships with genomic and transcriptional features. One of the key issues I am currently investigating is the integration of transcriptomics data from RNA-seq with interactomics in applications for the identification of biomarkers that will help understand the transcriptional and genetic mechanisms involved in the development of prostate and breast cancer. Another aspect of protein interations that my lab is currently involved in is in calmoudlin-biding proteins and their interactions with other proteins. More information about my research in this field can be found in the <a href="interactomics.html">Interactomics</a> page.</p>
-
-<br>
-</head-desc>
+  <!-- 7 -->
+  <div class="research-card">
+    <h3>7. Cancer Research and Clinical Disease Diagnostics</h3>
+    <p>Applying machine learning algorithms to isolate next-generation NGS biomarkers and discover driving molecular mutations in highly complex oncological environments[cite: 7, 13]. Projects focus on targeted gene sequencing integration, fecal-microbial metabolomic diagnostic frameworks, and network-based computational drug repurposing across malignant breast, prostate, and colorectal cancer subtypes[cite: 7, 13].</p>
+  </div>
 </div>
-
-
-<!-- --------------------------- Footer --------------------------  -->
 
 <div class="footer">
-    
-    <p> &#9400; Luis Rueda, 2022</p>
+  <p>&#9400; Luis Rueda, 2026</p>
 </div>
 
-<!-- ------------------------- Script Section ---------------------- -->
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
+window.onscroll = function() { stickyNavbar() };
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+function stickyNavbar() {
+  if (window.pageYOffset > sticky) { header.classList.add("sticky"); } 
+  else { header.classList.remove("sticky"); }
 }
-
 </script>
 </body>
 </html>
