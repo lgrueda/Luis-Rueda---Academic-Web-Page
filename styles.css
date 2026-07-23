@@ -1,3 +1,6 @@
+/* --- Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* --- Global Theme & Minimal Reset --- */
 * {
   box-sizing: border-box;
@@ -6,7 +9,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.7;
   color: #222222;
   background-color: #ffffff;
@@ -53,11 +56,11 @@ a:hover {
 }
 
 .profile-info h1 {
-  font-family: "Times New Roman", Times, Georgia, serif;
-  font-size: 36px;
+  font-family: 'Inter', sans-serif;
+  font-size: 34px;
   color: #111111;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
 
@@ -154,12 +157,13 @@ a:hover {
 }
 
 .paper-card h3, .research-card h3, .info-card h3 {
-  font-family: "Times New Roman", Times, Georgia, serif;
+  font-family: 'Inter', sans-serif;
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 22px;
+  font-size: 21px;
   color: #111111;
   font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 /* --- Core Typography --- */
