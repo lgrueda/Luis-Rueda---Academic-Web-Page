@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
+<title>Prof. Luis Rueda - People</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,27 +10,34 @@
 
 </head>
 
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div  class="header" id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html" class="active">People</a>
+      <a href="resources.html">Resources</a>
+    </nav>
   </div>
 </div>
 
-
-<!-- --------------------------- Main Body --------------------------  -->
+<div class="container main-content">
 
 <h2>	People </h2>
 <h4><a href="prospective-students.html"> Prospective Students</a></h4>
@@ -65,7 +72,6 @@ I currently have opening positions for undergraduate, Master's and PhD students.
 </li>
 <br>
 
-
 <li>
   <hdr>Danial Ebrat (Since Sep 2022)</hdr>
   <br>
@@ -80,8 +86,6 @@ I currently have opening positions for undergraduate, Master's and PhD students.
 </li>
 <br>
 
-
-
 <li>
   <hdr>Mahshad Hashemi (Since Sep 2021)</hdr>
   <br>
@@ -93,7 +97,6 @@ I currently have opening positions for undergraduate, Master's and PhD students.
 </p>
 </li>
 <br>
-
 
 <li>
   <hdr>Akram Vasighizaker (Since Jan 2020)</hdr>
@@ -114,7 +117,6 @@ I currently have opening positions for undergraduate, Master's and PhD students.
   <br>
 </p>
 </li>
-
 
 <li>
   <hdr>Sudipta Modak* (Electrical and Computer Engineering Department)</hdr>
@@ -187,7 +189,6 @@ I currently have opening positions for undergraduate, Master's and PhD students.
 <li><hdr>Nitin Ramesh - rames11a-at-uwindsor.ca </hdr>
 <li><hdr>Jose Guillen Santos - guille11-at-uwindsor.ca </hdr>
 </ul>
-
 
 <br><br><br>
 <h4>Past Students and Fellows</h4>
@@ -275,51 +276,13 @@ I currently have opening positions for undergraduate, Master's and PhD students.
 </ul>
 
 <span style="font-size:10px">* co-supervision</span>
-
-
-
-
-
-
-<!-- --------------------------- Footer --------------------------  -->
-<div class="footer">
-    <p> &#9400; Luis Rueda, 2022</p>
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-
-<!-- ------------------------- Script Section ---------------------- -->
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
 </body>
 </html>

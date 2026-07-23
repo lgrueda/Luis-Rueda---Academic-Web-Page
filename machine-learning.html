@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
+<title>Prof. Luis Rueda - Machine Learning</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,36 +10,41 @@
 
 </head>
 
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div  class="header" id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="resources.html">Resources</a>
+    </nav>
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
+<div class="container main-content">
 
-<div>
-<head-desc>
 <img src="images/Nonlinear_Dimensionality_Reduction.png" alt="Nonlinear DR" style="float:right;width:150;height:300px;" >
 <h2>Machine Learning</h2>
 
 <p>Computers can learn like human beings, from observations, examples, images, sensors, data, and experience. Machine learning is a field of artificial intelligence that involves the design and implementation of algorithms for computers to evolve their behavior from observations, examples, images, sensors, data, and experience, among many other sources. My main research in machine learning is on pattern recognition, dimensionality reduction, representation learning, and clustering.</p>
 
 <p>The main focus of my research in this area is to devise efficient algorithms for classification, clustering, feature selection, dimensionality reduction, visualization and performance evaluation, with applications to interactomics, transcriptomics and multi-omics data integration. Over the past 15 years, I have contributed quite a bit in many application areas (mainly in transcriptomics and interactomics) as can be seen below. In fundamental pattern recognition I have worked in statistical pattern recognition. A summary of my contributions is given below. Some items are just summarized in a sentence or two; more information can be found in the corresponding publications.</p>
-
 
 <h4>Optimal 1D Clustering + KPCA</h4>
 <p><img style="float: right;" alt="kPCA Synthetic" src="images/kPCA_moonpairs_dataset.png" height="206" width="299" /> We have recently proposed a nonlinear dimensionality reduction and clustering approach based on kernel PCA and one-dimensional, optimal multi-level thresholding. The algorithm consists of utilizing kernel PCA to reduce the data onto the one-dimensional space. An optimal multi-level thresholding algorithm is then applied to the 1D data along with indices of validity to discover the optimal clustering. As the algorithm runs in quadratic time, it allows to explore a wide range of parameters of the kernels, making it more efficient than using k-means combined with other non-linear dimensionality methods or even KPCA. Results on synthetic data (figure on the right) and images of the 26 letter alphabet from MNIST show Silhouette scores higher than 0.98, which makes it a very competitive approach for clustering high-dimensional, complex data. 
@@ -52,7 +57,6 @@
 <li>  To be updated. 
 </li>
 </ul>
-
 
 <h4>Summary of Previous Contributions</h4>
 <ul>
@@ -67,50 +71,13 @@
 <li>We are currently developing approaches for linear dimensionality reduction (LDR) used for classification and feature selection.</li>
 <li>We have proposed a new approach that combines non-linear mapping on LDR with applications to class-imbalance problems present in prediction of microRNA and high throughput protein-protein interactions.</li>
 </ul>
-</head-desc>
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-
-<!-- --------------------------- Footer --------------------------  -->
-
-<div class="footer">
-    
-    <p> &#9400; Luis Rueda, 2022</p>
-</div>
-
-<!-- ------------------------- Script Section ---------------------- -->
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
 </body>
 </html>

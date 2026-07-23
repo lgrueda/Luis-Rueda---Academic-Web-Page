@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
+<title>Prof. Luis Rueda - Interactomics</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,29 +10,35 @@
 
 </head>
 
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div  class="header" id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="resources.html">Resources</a>
+    </nav>
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
+<div class="container main-content">
 
-<div>
-<head-desc>
 <h2>Interactomics</h2>
 
 <p>The interactome aims to study the main aspects of proteins interacting in a living system. The interactome is rather dynamic as the interactions and ultimately functions are manifested in a temporal and spatial manner. To understand the complex cellular mechanisms involved in a biological system, it is necessary to study the nature and specificity of these interactions and the dynamics involved in it at the molecular level, for which prediction of protein-protein interactions (PPIs) has played a significant role. My main research in interactomics focuses on machine learning algorithms for prediction and analysis of PPIs using low-throughput (mostly structural) and high-throughput data, with applications to calmodulin-binding proteins.</p>
@@ -98,49 +104,13 @@
 <li>Data integration of interactomics with transcriptomics by finding relationships between gene expression and alternative splicing and protein-protein interactions. Applications to breast and prostate cancer are being pursued. In one of the projects (see also <a href="/research/transcriptomics" target="_blank">Transcriptomics</a>) we are currently investigating the protein variants or isoforms found in RNA-seq data and which are associated with alternative splicing in prostate cancer.</li>
 <li>Interactomics in oral fluids, in particular, the main aspects of salivary protein-protein interactions.</li>
 </ul>
-</head-desc>
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-<!-- --------------------------- Footer --------------------------  -->
-
-<div class="footer">
-    
-    <p> &#9400; Luis Rueda, 2022</p>
-</div>
-
-<!-- ------------------------- Script Section ---------------------- -->
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
 </body>
 </html>

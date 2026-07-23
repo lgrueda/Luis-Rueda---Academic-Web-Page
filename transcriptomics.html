@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
+<title>Prof. Luis Rueda - Transcriptomics</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,43 +10,47 @@
 
 </head>
 
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div  class="header" id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="resources.html">Resources</a>
+    </nav>
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
-<div>
-<head-desc>
+<div class="container main-content">
+
 <h2>Transcriptomics</h2>
 
 <p>The transcriptome represents the repertoire of transcripts in an organism as the main product of transcribed RNA. The Human genome comprises 3 billion bases on each of (on average 10<sup>14</sup>) cells in one body, where each cell may contain up to 300k RNA molecules. Then, the full transcriptome may contain approximately 8.4<sup>23</sup> RNA bases... in one body! One cell line/condition, translated to bioinformatics data, could imply 30Mb of microarray data or 30Gb of RNA-seq data, and all cells in one body from <a href="http://simple.wikipedia.org/wiki/Petabyte" target="_blank">petabytes</a> to <a href="http://simple.wikipedia.org/wiki/Exabyte" target="_blank">exabytes</a>. Transcriptomics studies have been traditionally carried out using microarray technologies and the emerging next generation sequencing techniques known as RNA-seq. The main problems and topics being addressed in my research in transcriptomics are summarized below.</p>
-
 
 <h3>Single-cell RNA-seq Data Analysis - Cell Type Identification</h3>
 <br>
 Single-cell sequencing (scRNA-seq) is an emerging technology used to capture cell-level information and by which individual cells can be analyzed separately. While many computational methods have been devised for analyzing scRNA-seq data, there are many open problems in this research area. 
 One of the main scRNA-seq analytical challenges is finding cell types, highly differentially expressed tissue-specific gene sets, or gene-gene interarions, which currently we are working on. Among these, we focus on the identification of different cell types using manifold learning combined with clustering techniques on scRNA-Seq data. 
 
-
 A proposed two-step approach reveals that genes with similar expression patterns are grouped in highly-scored clusters, achieving very high performance in most cases. Efficient nonlinear dimensionality reduction and manifold learning techniques based on modified locally linear embedding significantly improve the clustering step; the addition of independent component analysis enhances visualization in a reduced space. 
 <br>
  The method has been tested on a scRNA-seq dataset (available at the GEO database, accession no. <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE148729" target="_blank">GSE148729</a>), extracted from NCBI's Gene Expression Omnibus, which includes 27,072 gene expression profiles of 48,890  human lung cell lines sequenced using Illumina NextSeq 500. In this dataset, different cell lines were contaminated with SARS-CoV-1 and SARS-CoV-2 and sequenced at different time slots.
-
 
 <br>
  <img style="float: right;" alt="SARS-CoV-2-Relevant-Pathways" src="images/Cytoscape-Pathway2.png" height="350" width="450" />Performing gene set enrichment analysis to annotate a set of HVGs obtained from each cluster reveals biomarker genes involved in different gene ontology terms. Pathways that are enriched by marker genes are shown in the figure (right). Numbers show the clusters and edges show the links between  clusters and pathways. Nodes highlighted in yellow show the SARS-CoV-2 cell-specific pathway. Most of the other green nodes reveal shared and cluster-specific functional pathways in the immune system.
@@ -80,7 +84,6 @@ S. Danda, A. Vasighizaker, L. Rueda. (2020), <a href="https://ieeexplore.ieee.or
 
 </ul>
 
-
 <br>
 <br>
 <h3>Single-cell RNA-seq Data Analysis - Prediction of cell-cell interactions </h3>
@@ -88,10 +91,8 @@ S. Danda, A. Vasighizaker, L. Rueda. (2020), <a href="https://ieeexplore.ieee.or
 
 Cell-cell interactions regulate organismal development, homeostasis, and single-cell functions. The disease occurs when cells do not interact properly or decode molecular messages improperly. Thus, identifying and quantifying intercellular signaling pathways has become a common analysis carried out across a variety of fields. We introduce a pipeline to identify cell-cell interactions using graph convolutional networks. Pipeline steps include pre-processing of the data, followed by cell-graph construction, and then identifying cell-cell interactions using graph convolutional networks.
 
-
 <br>
 The datasets can be found at <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133" target="_blank"> https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133 </a> and the code is publicly available at Github <a href="https://github.com/sheenahora/SEGCECO" target="_blank"> https://github.com/sheenahora/SEGCECO </a>  and Code Ocean <a href="https://codeocean.com/capsule/8244724/tree" target="_blank"> DOI: 10.24433/CO.7099053.v1.  </a> 
-
 
 <p> <img style="float: right;" alt="SEGCECO Pipeline" src="images/SEGCECOPipeline.png" height="300" width="400" /> </p>
 
@@ -120,7 +121,6 @@ S. Danda, A. Vasighizaker, L. Rueda. (2020), <a href="https://ieeexplore.ieee.or
 </li>
 </ul> -->
 
-
 <h3>Network Biomarkers</h3>
 <p> We have proposed a machine learning approach that is used to identify network biomarkers. We have applied our approach to identify such biomarkers in different subtypes of breast cancer, achieving excellent results in prediction of the subtypes, as well as identifying a few biomarkers. We have been able to identify network biomarkers and driver genes for each specific breast cancer subtype. Our results show that the resulting network biomarkers can separate one subtype from the others with very high accuracy.
 
@@ -135,7 +135,6 @@ solve class imbalance and random forest to predict survivability of patients. We
 <li> F. Firoozbakht, I. Rezaeian, M. D'Agnillo, L. Porter, L. Rueda, A. Ngom. <a href="https://www.ncbi.nlm.nih.gov/pubmed/28650678" target="_blank">An integrative approach for identifying network biomarkers of breast cancer subtypes using genomics, interactomics and transcriptomics data</a>, Journal of Computational Biology, 2017, 24(8):756-766, doi: 10.1089/cmb.2017.0010.
 </li>
 </ul>
-
 
 <h3>ChIP-Seq and RNA-Seq Data Analysis</h3>
 
@@ -217,49 +216,13 @@ Prostate cancer is a very complex disease, and diagnosis is becoming progressive
 <li>Y. Li, A. Ngom, L. Rueda (2010). <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5510349" target="_blank">Missing Value Imputation Methods for Gene-Sample-Time Microarray Data Analysis</a>. IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2010), Montreal, Canada, pp. 183-189.</li>
 <li>W. Yang, L. Rueda and A. Ngom (2007). <a href="http://connection.ebscohost.com/c/articles/25752166/finding-best-parameters-fuzzy-k-means-clustering-microarray-data" target="_blank">On Finding the Best Parameters of Fuzzy k-Means for Clustering Microarray Data</a>. Multiple-Valued Logic and Soft-Computing Journal, 13(1/2):145-178.</li>
 </ul>
-</head-desc>
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-<!-- --------------------------- Footer --------------------------  -->
-
-<div class="footer">
-    
-    <p> &#9400; Luis Rueda, 2022</p>
-</div>
-
-<!-- ------------------------- Script Section ---------------------- -->
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
 </body>
 </html>

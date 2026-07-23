@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
+<title>Prof. Luis Rueda - Prospective Students</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,28 +10,37 @@
 
 </head>
 
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div  class="header" id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="resources.html">Resources</a>
+    </nav>
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
-<div> 
-<head-desc>
+<div class="container main-content">
+
+ 
+
 <h2>Prospective Students</h2>
 
 <p>Notes:
@@ -48,53 +57,16 @@
 <p> Gradiate students' projects include applications of machine learning in bioinformatics. The main topics for theses and projects are in foundations of shallow and deep machine learning and applications in genomics, multi-omics, and transcriptomics, mostly in cancer biomarkers. Projects include, but not limited to, algorithms for multi-level thresholding, non-linear dimensionality reduction, graph representation learning, graph neural networks, and others. Applications include  transcriptomics, integrative genome-wide analysis, multi-omics data analysis, single-cell RNA-Seq data analysis, discovery of cancer biomarkers. Problems in transcriptomics and multi-omics involve analysis of next generation sequencing data, including ChIP-seq and single-cell RNA-seq data for discovering biomarkers in different types of cancer, and the role of alternative splicing, protein interactions and pathways. </p>
 -->
 
-
 <h4>Undergraduate Research Projects</h4>
 
 <p> At present only students who are enrolled in COMP-4990 or in exceptional cases in COMP4960 are being considered.</p>
-
-</head-desc>
 </div>
 
-<br><br>
-<!-- --------------------------- Footer --------------------------  -->
-<div class="footer">
-    <p> &#9400; Luis Rueda, 2022</p>
-</div>
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-
-<!-- ------------------------- Script Section ---------------------- -->
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
 </body>
 </html>

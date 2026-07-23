@@ -8,34 +8,38 @@
 </head>
 <body>
 
-<iframe height="190px" width="100%" scrolling="no" src="header.html" style="border:none; padding:0; display:block;" name="iframe_header">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-
-<div class="header" id="myHeader">
-  <nav class="navbar">
-    <div class="nav-brand">
-      <a href="index.html">Prof. Luis Rueda</a>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
     </div>
-    <div class="nav-links">
+  </div>
+</header>
+
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="publications.html" class="active">Publications</a>
-      <a href="teaching.html">Teaching</a> 
-      <a href="people.html">People</a>  
-      <a href="resources.html">Resources</a>  
-    </div>
-  </nav>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </div>
 </div>
 
-<div> 
-<head-desc>
+<div class="container main-content">
   <img style="float: right; margin-left: 20px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" src="images/BookMicroarray.jpg" alt="Microarray Data Analysis" height="250" width="165" />
 
   <h2>Book</h2>
 
   <p>This is the main site for the book I have edited, titled "<a href="http://www.crcpress.com/product/isbn/9781466586826" target="_blank">Microarray Image and Data Analysis: Theory and Practice</a>", published by CRC Press / Taylor &amp; Francis in March 2014. This site is being updated periodically.</p>
-  
+
   <div>
     <h4>Summary</h4>
     <p>This book overviews microarray image analysis, covering different types of microarrays such as cDNA, protein, tissue, and low- and high-density oligonucleotide arrays. Broad in scope, the book covers the most important aspects of microarray image analysis, including gridding, segmentation, quantification, normalization, clustering, and network analysis.</p>
@@ -53,26 +57,14 @@
       <li>Oct 2013: The book is currently in the production department and is expected to be published by March 2014.</li>
     </ul>
   </div>
-</head-desc>	
 </div>
 
-<div class="footer">
-    <p>&copy; Luis Rueda, 2022</p>
-</div>
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 </body>
 </html>
+

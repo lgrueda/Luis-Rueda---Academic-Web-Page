@@ -198,6 +198,64 @@ li {
   margin-bottom: 10px;
 }
 
+/* --- Content headings inside plain content pages (not card-based) --- */
+.main-content > h2,
+.main-content > div > h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: #111111;
+  margin: 40px 0 18px 0;
+  padding-left: 14px;
+  border-left: 4px solid #B08D2C;
+}
+.main-content > h2:first-child,
+.main-content > div > h2:first-child {
+  margin-top: 0;
+}
+
+.main-content h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #151515;
+  margin: 30px 0 14px 0;
+  padding-left: 12px;
+  border-left: 3px solid #B08D2C;
+}
+
+.main-content h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16.5px;
+  color: #1a1a1a;
+  margin: 24px 0 10px 0;
+}
+.main-content h4 a { color: #0044cc; }
+
+.main-content h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666666;
+  margin: 20px 0 8px 0;
+}
+
+.main-content img {
+  border-radius: 4px;
+  border: 1px solid #e1e4e6;
+}
+
+.main-content a {
+  color: #0044cc;
+}
+
+.main-content a:hover {
+  color: #002288;
+}
+
 .pub-type-tag {
   font-size: 11px;
   text-transform: uppercase;

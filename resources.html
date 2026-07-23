@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prof. Luis Rueda</title>
+<title>Prof. Luis Rueda - Resources</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,28 +10,37 @@
 
 </head>
 
-
 <body>
 
-<!-- ------------------------------ Header ----------------------------------- -->
-<iframe height="250px" width="100%" scrolling="no" src="header.html" style="border:none; background-color: #e0e0eb; padding:0px 0px;" name="iframe_header">
-<p>Your browser does not support iframes.</p>
-</iframe>
+<header class="site-header">
+  <div class="container">
+    <div class="profile-block">
+      <img src="images/Luis Aug 2015.jpg" alt="Professor Luis Rueda" class="profile-pic">
+      <div class="profile-info">
+        <h1>Professor Luis Rueda</h1>
+        <p>School of Computer Science &bull; University of Windsor</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-<div  class="header" id="myHeader">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications </a>
-    <a href="teaching.html">Teaching </a> 
-    <a href="people.html">People </a>  
-    <a href="resources.html">Resources </a>  
+<div class="nav-wrapper">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="people.html">People</a>
+      <a href="resources.html" class="active">Resources</a>
+    </nav>
   </div>
 </div>
 
-<!-- --------------------------- Main Body --------------------------  -->
-<div> 
-<head-desc>
+<div class="container main-content">
+
+ 
+
 <h2>	Software Tools </h2> 					
 		
 <h4><a href="https://github.com/NaziaFatima/iSOM_GSN" target="_blank">iSOM-GSN</a></h4>
@@ -53,7 +62,6 @@ We have introduced a systematic, generalized method, called iSOM-GSN, used to tr
 <h4><a href="software/OMTG.rar" target="_blank">OMTG</a></h4>
 <p>Optimal Multi-level Thresholding Gridding. A gridding method for gridding cDNA microarray images based on the principles of segmentation techniques for image processing. This method allows finding sub-grids in full cDNA microarray images, and the location of individual spots in each sub-grid. It works automatically and free of user-defined parameters. It has been found to outperform state-of-the-art methods. The tools can be downloaded from <a href="software/OMTG.rar" target="_blank">this link</a>. When using these tools, please cite: L. Rueda, I. Rezaeian, <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-113" target="_blank">A Fully Automatic Gridding Method for cDNA Microarray Images</a>, BMC Bioinformatics, 2011, 12:113.</p>
 
-
 <h2> Datasets </h2>
 
 <p>Datasets of my published papers are available upon request. Some links are given below.</p>
@@ -62,50 +70,14 @@ We have introduced a systematic, generalized method, called iSOM-GSN, used to tr
 <li> S. Jubair, A. Alkhateeb, A. Abou Tabl, L. Rueda, A. Ngom (2019). <a href="" target="_blank">Identifying subtype specific network-biomarkers of breast cancer survivability</a>. BMC Bioinformatics Suppl, 2019. Work in collaboration with Alioune Ngom. The dataset can be downloaded from <a href="datasets/Survivability-Network-Biomarkers-Data.zip">this link</a>. </li>
 <li>Dec 3 2019: O. Hamzeh, A. Alkhateeb, J. Zheng, S. Kandalam, C. Leung, G. Atikukke, D. Cavallo-Medved, N. Palanisamy, L. Rueda (2019). <a href="https://europepmc.org/article/PPR/PPR103504" target="_blank">A Hierarchical Machine Learning Model to Discover Gleason Grade Group-specific Biomarkers in Prostate Cancer</a>. Diagnostics. The dataset can be downloaded from <a href="datasets/Hierarchical-Prostate-Cancer-Gleason.rar">this link</a>.</li>
 </ul>
-</head-desc>
-</div>
-<br>
-<br>
-
-<!-- --------------------------- Footer --------------------------  -->
-<div class="footer">
-    <p> &#9400; Luis Rueda, 2022</p>
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <p>&#9400; Luis Rueda, 2026</p>
+  </div>
+</footer>
 
-<!-- ------------------------- Script Section ---------------------- -->
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-
-window.onscroll = function() {myFunction()};
-
-// Make the header of the web page stay fixed
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-</script>
 </body>
 </html>
 
