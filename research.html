@@ -4,6 +4,50 @@
 <title>Prof. Luis Rueda - Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .research-card{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 26px;
+    align-items: start;
+  }
+  .research-thumb-wrap{
+    display: block;
+  }
+  .research-thumb{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e1e4e6;
+    background: #f4f5f6;
+    display: block;
+  }
+  .research-thumb-wrap:hover .research-thumb{
+    border-color: #0044cc;
+  }
+  .view-pubs-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #0044cc;
+  }
+  .view-pubs-link:hover{
+    color: #002288;
+    text-decoration: underline;
+  }
+  @media (max-width: 768px){
+    .research-card{
+      grid-template-columns: 1fr;
+    }
+    .research-thumb{
+      height: 180px;
+    }
+  }
+</style>
 </head>
 <body>
 
